@@ -1,0 +1,13 @@
+firstName = input()
+lastName = input()
+age = int(input())
+gender = input()
+id = int(input())
+employeeNumber = int(input())
+
+print("First name: "+firstName)
+print("Last name: "+lastName)
+print("Age: "+str(age))
+print("Gender: "+gender)
+print("Personal ID: "+str(id))
+print("Unique Employee number: "+str(employeeNumber))

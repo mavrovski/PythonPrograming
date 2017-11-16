@@ -1,0 +1,5 @@
+print("Software University")
+print('B')
+print('y')
+print('e')
+print("I love programming")

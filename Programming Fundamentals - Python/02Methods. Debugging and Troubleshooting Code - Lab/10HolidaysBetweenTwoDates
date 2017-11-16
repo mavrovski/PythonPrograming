@@ -1,0 +1,20 @@
+from datetime import timedelta,datetime
+
+
+def daterange(start_date, end_date):
+    for n in range(int ((end_date - start_date).days)):
+        yield start_date + timedelta(n)
+
+
+
+start_date = datetime.strptime(input(), "%d.%m.%Y").date()
+end_date = datetime.strptime(input(), "%d.%m.%Y").date()
+holidays_count = 0
+for single_date in daterange(start_date, end_date+timedelta(1)):
+    if single_date.weekday() == 5 or single_date.weekday() == 6:
+        holidays_count +=1
+
+print(holidays_count)
+    # print (single_date.strftime("%d-%m-%Y"))
+
+
